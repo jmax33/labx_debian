@@ -1,0 +1,6 @@
+
+
+mkdir /srv/netboot
+cd /srv/netboot
+wget http://ftp.nl.debian.org/debian/dists/wheezy/main/installer-i386/current/images/netboot/netboot.tar.gz
+tar -xzf netboot.tar.gz
