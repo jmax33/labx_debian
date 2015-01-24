@@ -1,4 +1,6 @@
+!!!! this file is not a script !!!
 
+see : http://www.unix-experience.fr/2013/installation-automatisee-de-debian-par-le-reseau/
 
 mkdir /srv/netboot
 cd /srv/netboot
