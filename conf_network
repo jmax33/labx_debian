@@ -1,0 +1,5 @@
+echo "1" | tee /proc/sys/net/ipv4/ip_forward  
+echo "!!!! ip_forward activate : !!!" 
+cat /proc/sys/net/ipv4/ip_forward  
+iptables -t nat -A POSTROUTING -s 192.168.250.0/24 -o wlp9s0 -j MASQUERADE
+ifconfig enp5s0 192.168.250.1 up
