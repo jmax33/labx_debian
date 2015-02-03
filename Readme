@@ -1,8 +1,21 @@
-!!!! this file is not a script !!!
+#labx_debian
 
-see : http://www.unix-experience.fr/2013/installation-automatisee-de-debian-par-le-reseau/
+Create debian auto installer for labx
 
-mkdir /srv/netboot
-cd /srv/netboot
-wget http://ftp.nl.debian.org/debian/dists/wheezy/main/installer-i386/current/images/netboot/netboot.tar.gz
-tar -xzf netboot.tar.gz
+## docs
+http://www.unix-experience.fr/2013/installation-automatisee-de-debian-par-le-reseau/
+http://wiki.dane.ac-versailles.fr/index.php?title=Utiliser_apt-mirror
+
+## script
+### conf_network.sh
+my server have 2 ethernets port, 
+* one port is connected on my LAN
+* second port connected on my target
+this script configure these ports
+
+### run_pxe_server.sh
+run dnsmasq service to provide pxe boot for target
+
+## todo
+mkdir /srv (if not exit)
+ln -s (prj_path)/netboot netboot
