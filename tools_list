@@ -1,0 +1,20 @@
+#dev tools
+QT
+android (android studio ?)
+python
+apache/php
+postgresql
+arduino
+
+#electronic
+*kicad
+*eagle
+
+#draw
+*inkscape
+*blender 
+
+#other
+distcc (distributed compilation)
+netrender (blender distribuded rendering)
+ 
